@@ -2,7 +2,7 @@
 
 ![header](./img/header-img.png)
 
-##### Table of Contents  
+## Table of Contents  
 - [Description](#description)
 - [EDA](#eda)
   - [Data Overview](#data-overview)
@@ -22,11 +22,6 @@
 - [Test Model locally](#test-model-locally)
 - [Using Docker to create a local API](#using-docker-to-create-a-local-api)
 - [Cloud Deployment](#cloud-deployment)
-  - [Set Up Google Cloud SDK](#set-up-google-cloud-sdk)
-  - [Build Your Container Image](#build-your-container-image)
-  - [Deploy the App to Google Cloud Run](#deploy-the-app-to-google-cloud-run)
-  - [Deployment Process](#deployment-process)
-  - [Access the Service](#access-the-service)
 
 
 ## Description
@@ -302,7 +297,7 @@ Google Cloud Run is a serverless platform for deploying containerized applicatio
 4. **Deployment Process:**
    - The `gcloud` command will build and deploy your container to Google Cloud Run. The deployment process may take a few minutes. You'll see progress messages in your terminal.
 
-![cloud-deploy](.img/cloud-deploy.JPG)
+![cloud-deploy](./img/cloud-deploy.JPG)
 
 5. **Access the Service:**
    - Once the deployment is complete, you'll receive a URL where your service is hosted. You can access your application using this URL.
@@ -315,4 +310,4 @@ python predict-test.py "https://zoomcamp-qa-234gh2nz6a-rj.a.run.app"
 streamlit run app.py "https://zoomcamp-qa-234gh2nz6a-rj.a.run.app"
 ```
 
-![cloud-test](.img/screenshot-cloud.JPG)
+![cloud-test](./img/screenshot-cloud.JPG)
