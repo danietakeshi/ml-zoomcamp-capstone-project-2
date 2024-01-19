@@ -6,9 +6,6 @@ from flask import jsonify
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 
-## pipenv install sentence-transformers pandas numpy flask gunicorn scikit-learn streamlit
-## mv /mnt/c/Users/d.takeshi/Documents/workspace/ml-zoomcamp-capstone-project-2 .
-
 input_file = 'ml-zoomcamp-qa-sentence-transformer'
 
 print('Loading model...')
@@ -19,6 +16,7 @@ file_name = 'embeddings.parquet'
 df = pd.read_parquet(f'./{file_name}')
 candidate_answers = df.answer.tolist()
 candidate_answers_embeddings = df.answer_embedding.tolist()
+print('Embedding Database Loaded')
 
 app = Flask('qa-query')
 
