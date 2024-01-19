@@ -1,3 +1,6 @@
+# DataTalks.Club Q&A Navigator: Revolutionizing Information Access with NLP
+
+![header](./img/header-img.png)
 
 ## Description
 
