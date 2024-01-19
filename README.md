@@ -2,6 +2,33 @@
 
 ![header](./img/header-img.png)
 
+##### Table of Contents  
+- [Description](#description)
+- [EDA](#eda)
+  - [Data Overview](#data-overview)
+  - [Frequency Distribution for 'Course'](#frequency-distribution-for-course)
+  - [Data Visualization: Distribution of Courses Over the Years](#data-visualization-distribution-of-courses-over-the-years)
+  - [Word Cloud](#word-cloud)
+- [Model Training](#model-training)
+- [Export to Script](#export-to-script)
+- [Flask API](#flask-api)
+  - [Running the Application](#running-the-application)
+  - [API Usage](#api-usage)
+    - [Request Format](#request-format)
+    - [Response Format](#response-format)
+    - [Example](#example)
+- [Preparing the Repository](#preparing-the-repository)
+- [Setting up the environment](#setting-up-the-environment)
+- [Test Model locally](#test-model-locally)
+- [Using Docker to create a local API](#using-docker-to-create-a-local-api)
+- [Cloud Deployment](#cloud-deployment)
+  - [Set Up Google Cloud SDK](#set-up-google-cloud-sdk)
+  - [Build Your Container Image](#build-your-container-image)
+  - [Deploy the App to Google Cloud Run](#deploy-the-app-to-google-cloud-run)
+  - [Deployment Process](#deployment-process)
+  - [Access the Service](#access-the-service)
+
+
 ## Description
 
 The idea for this project came from the 'DTC Zoomcamp Q&A Challenge' that provides a unique dataset with dataset with questions and possible answers and challenge us to create a natural language processing (NLP) model that is capable of matching the question with the correct answer.
